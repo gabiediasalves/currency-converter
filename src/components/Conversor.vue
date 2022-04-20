@@ -2,7 +2,7 @@
   <div class="conversor">
     <h2>{{ moedaA }} to {{ moedaB }}</h2>
     <input type="text" v-model="moedaA_value" v-bind:placeholder="moedaA"/>
-    <input type="button" value="Converter" v-on:click="converter"/>
+    <input type="button" class="btn btn-success" value="Converter" v-on:click="converter"/>
     <h2>{{ moedaB_value }}</h2>
   </div>
 </template>
@@ -47,5 +47,9 @@ export default {
   max-width: 300px;
   box-shadow: 0 4px 8px 0 rgba(43, 43, 43, 0.623);
   border-radius: 4px;
+}
+
+.btn-success{
+  margin-top: 10px;
 }
 </style>
